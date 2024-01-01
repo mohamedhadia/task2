@@ -1,5 +1,10 @@
-# Mantine Next Template
+# to use the app 
+- change ```.evn.local.example``` to ```.evn.local```
+- run ```yarn``` to install the packages
+- then ```yarn dev``` to run the app in dev mode.
 
-Get started with the template by clicking `Use this template` button on the top of the page.
 
-[Documentation](https://mantine.dev/guides/next/)
+## main libraries being used 
+- mantine 
+- tailwinCSS
+- react query

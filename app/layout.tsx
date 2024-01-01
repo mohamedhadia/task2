@@ -1,18 +1,27 @@
-import "@mantine/core/styles.css";
 import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
-import { theme } from "../theme";
-import "./global.css";
 import Providers from "../context/provider";
 
+import { theme } from "../theme";
+import { Roboto } from "next/font/google";
+
+import "@mantine/core/styles.css";
+import "./global.css";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
+
 export const metadata = {
-  title: "Mantine Next.js template",
-  description: "I am using Mantine with Next.js!",
+  title: "Evently",
+  description: "Evently - Demo test",
 };
 
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html lang="en">
+    <html lang="en" className={roboto.className}>
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
