@@ -171,7 +171,7 @@ export default function NewSession({ searchParams }: Props) {
               router.push("/dashboard/sessions");
             }}
             variant="filled"
-            color="#2D2D2D"
+            className="!bg-[#2D2D2D] text-white"
             size="md"
             radius="xs"
             disabled={isPending}
@@ -181,8 +181,7 @@ export default function NewSession({ searchParams }: Props) {
           <Button
             type="submit"
             variant="filled"
-            color="rgba(255, 255, 255, 1)"
-            className="!text-gray-900"
+            className="!text-gray-900 !bg-white"
             size="md"
             radius="xs"
             disabled={isPending}

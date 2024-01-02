@@ -300,7 +300,7 @@ export function AddUserModal({
               type="button"
               onClick={close}
               variant="filled"
-              color="#2D2D2D"
+              className="!bg-[#2D2D2D] text-white"
               size="md"
               radius="xs"
               disabled={isPending}
@@ -310,8 +310,7 @@ export function AddUserModal({
             <Button
               type="submit"
               variant="filled"
-              color="rgba(255, 255, 255, 1)"
-              className="!text-gray-900"
+              className="!text-gray-900 !bg-white"
               size="md"
               radius="xs"
               disabled={isPending}
