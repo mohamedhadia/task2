@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* html,
+body {
+  font-size: 62.5%;
+} */
+
+.mantine-TextInput-input,
+.mantine-DateInput-input,
+.mantine-TimeInput-input,
+.mantine-Textarea-input,
+.mantine-Select-input,
+.mantine-PillsInput-input {
+  @apply !bg-transparent !border-gray-400 border !rounded-none  placeholder:!text-gray-500 !text-gray-200 mt-2;
+}
+.mantine-InputWrapper-required {
+  @apply !text-[#FDA29B];
+}
