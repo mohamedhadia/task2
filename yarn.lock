@@ -287,6 +287,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mantine/dates@npm:^7.3.2":
+  version: 7.3.2
+  resolution: "@mantine/dates@npm:7.3.2"
+  dependencies:
+    clsx: "npm:2.0.0"
+  peerDependencies:
+    "@mantine/core": 7.3.2
+    "@mantine/hooks": 7.3.2
+    dayjs: ">=1.0.0"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: dbd980b288a1de691f083ac3837a98c739185f5408fdc11a905689cf96725aeb90bca5be351f33f8726b8ff110f71a0807214959a9a7d542239daedd5ef16d12
+  languageName: node
+  linkType: hard
+
+"@mantine/dropzone@npm:^7.3.2":
+  version: 7.3.2
+  resolution: "@mantine/dropzone@npm:7.3.2"
+  dependencies:
+    react-dropzone-esm: "npm:15.0.1"
+  peerDependencies:
+    "@mantine/core": 7.3.2
+    "@mantine/hooks": 7.3.2
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 149ae1ce50eeba4f50569104c10bfbbe1c7a6129b92612f92271f73e01efd750c69c6fb7fec703cd935a9e70138873951a4d98609d1e03128ced0e5eb18b98b3
+  languageName: node
+  linkType: hard
+
+"@mantine/form@npm:^7.3.2":
+  version: 7.3.2
+  resolution: "@mantine/form@npm:7.3.2"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+    klona: "npm:^2.0.6"
+  peerDependencies:
+    react: ^18.2.0
+  checksum: c02bbc014a0ae33054612cbc2295ededb2f1316eee602a0912ef4c806d77236a08b54e85f4c8e840034431930d90edc15fe359a40c246254afeacd72d8d57835
+  languageName: node
+  linkType: hard
+
 "@mantine/hooks@npm:7.3.2":
   version: 7.3.2
   resolution: "@mantine/hooks@npm:7.3.2"
@@ -1440,6 +1481,13 @@ __metadata:
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
   checksum: 4c2647e0f42acaee7d068756c1d396e296c3556f9c8314bac1ac63ffb236217ef0e7e58602b18bb2173deec7ec8e0cac8e27cccf8f5526666b4ff11a13ad54a3
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.11.10":
+  version: 1.11.10
+  resolution: "dayjs@npm:1.11.10"
+  checksum: 4de9af50639d47df87f2e15fa36bb07e0f9ed1e9c52c6caa1482788ee9a384d668f1dbd00c54f82aaab163db07d61d2899384b8254da3a9184fc6deca080e2fe
   languageName: node
   linkType: hard
 
@@ -3203,6 +3251,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"klona@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "klona@npm:2.0.6"
+  checksum: 94eed2c6c2ce99f409df9186a96340558897b3e62a85afdc1ee39103954d2ebe1c1c4e9fe2b0952771771fa96d70055ede8b27962a7021406374fdb695fd4d01
+  languageName: node
+  linkType: hard
+
 "language-subtag-registry@npm:^0.3.20":
   version: 0.3.22
   resolution: "language-subtag-registry@npm:0.3.22"
@@ -3293,6 +3348,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lucide-react@npm:^0.303.0":
+  version: 0.303.0
+  resolution: "lucide-react@npm:0.303.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0
+  checksum: 58dc833311a4aa29b4a71ce1dade2c55eba3d07d5f9207fdabe55ed06499f13d62439bb37942b7aaebea90f638deb7ec67adde1e12404fb4d9f82a19ba1727f5
+  languageName: node
+  linkType: hard
+
 "make-fetch-happen@npm:^13.0.0":
   version: 13.0.0
   resolution: "make-fetch-happen@npm:13.0.0"
@@ -3312,12 +3376,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mantine-form-zod-resolver@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "mantine-form-zod-resolver@npm:1.1.0"
+  peerDependencies:
+    "@mantine/form": ">=7.0.0"
+    zod: ">=3.0.0"
+  checksum: 3ff086f2a5d7b9d3d56b09f16fdc27919000c2007279c2e5e6fe85c60c56ee75a13cfebaa1dd341c4ddafd73aba9a3c59a98ea41c59ea8d01c67483dc07ea1ad
+  languageName: node
+  linkType: hard
+
 "mantine-minimal-next-template@workspace:.":
   version: 0.0.0-use.local
   resolution: "mantine-minimal-next-template@workspace:."
   dependencies:
     "@headlessui/react": "npm:^2.0.0-alpha.3"
     "@mantine/core": "npm:7.3.2"
+    "@mantine/dates": "npm:^7.3.2"
+    "@mantine/dropzone": "npm:^7.3.2"
+    "@mantine/form": "npm:^7.3.2"
     "@mantine/hooks": "npm:7.3.2"
     "@mantine/notifications": "npm:^7.3.2"
     "@tabler/icons-react": "npm:^2.44.0"
@@ -3329,9 +3406,12 @@ __metadata:
     autoprefixer: "npm:^10.4.16"
     axios: "npm:^1.6.3"
     clsx: "npm:^2.1.0"
+    dayjs: "npm:^1.11.10"
     eslint: "npm:8.53.0"
     eslint-config-next: "npm:14.0.1"
     js-cookie: "npm:^3.0.5"
+    lucide-react: "npm:^0.303.0"
+    mantine-form-zod-resolver: "npm:^1.1.0"
     next: "npm:14.0.1"
     postcss: "npm:^8.4.32"
     postcss-preset-mantine: "npm:1.12.0"
@@ -3340,6 +3420,7 @@ __metadata:
     react-dom: "npm:18.2.0"
     tailwindcss: "npm:^3.4.0"
     typescript: "npm:5.2.2"
+    zod: "npm:^3.22.4"
   languageName: unknown
   linkType: soft
 
@@ -4147,6 +4228,17 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 66dfc5f93e13d0674e78ef41f92ed21dfb80f9c4ac4ac25a4b51046d41d4d2186abc915b897f69d3d0ebbffe6184e7c5876f2af26bfa956f179225d921be713a
+  languageName: node
+  linkType: hard
+
+"react-dropzone-esm@npm:15.0.1":
+  version: 15.0.1
+  resolution: "react-dropzone-esm@npm:15.0.1"
+  dependencies:
+    prop-types: "npm:^15.8.1"
+  peerDependencies:
+    react: ">= 16.8 || 18.0.0"
+  checksum: 4bd7054a78a9d8b98d13f0abfbdec334e647c681ccb62c5c38fce72e1bace4cdb7d5eb22675ab2ce63f6cca11ec40c0e2081a28a725a38f331cf930abb170e7d
   languageName: node
   linkType: hard
 
@@ -5356,5 +5448,12 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.22.4":
+  version: 3.22.4
+  resolution: "zod@npm:3.22.4"
+  checksum: 7578ab283dac0eee66a0ad0fc4a7f28c43e6745aadb3a529f59a4b851aa10872b3890398b3160f257f4b6817b4ce643debdda4fb21a2c040adda7862cab0a587
   languageName: node
   linkType: hard

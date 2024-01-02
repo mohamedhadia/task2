@@ -6,7 +6,12 @@ import { theme } from "../theme";
 import { Roboto } from "next/font/google";
 
 import "@mantine/core/styles.css";
+import "@mantine/dates/styles.css";
+import "@mantine/dropzone/styles.css";
+import "@mantine/notifications/styles.css";
+
 import "./global.css";
+import { Notifications } from "@mantine/notifications";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -32,7 +37,10 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body className="bg-primary-900">
         <Providers>
-          <MantineProvider theme={theme}>{children}</MantineProvider>
+          <MantineProvider theme={theme}>
+            <Notifications />
+            {children}
+          </MantineProvider>
         </Providers>
       </body>
     </html>
