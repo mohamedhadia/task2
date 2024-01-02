@@ -8,3 +8,6 @@
 - mantine 
 - tailwinCSS
 - react query
+
+## to run the app with docker (not working right now)
+ in command line run ```docker-compose up```
