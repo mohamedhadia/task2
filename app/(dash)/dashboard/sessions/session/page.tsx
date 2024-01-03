@@ -9,7 +9,12 @@ import { MultiSelectComp } from "../../../../../components/MultiSelectComp";
 import { UploadImage } from "../../../../../components/UploadImage";
 import { FileWithPath } from "@mantine/dropzone";
 import { useCreateSession, useSessionById } from "../../../../../hooks/general";
-import { getFileFromUrl, uploadImageCloud } from "../../../../../lib/utils";
+import {
+  formateTime,
+  formatedDate,
+  getFileFromUrl,
+  uploadImageCloud,
+} from "../../../../../lib/utils";
 import { zodResolver } from "mantine-form-zod-resolver";
 import { z } from "zod";
 import { useRouter } from "next/navigation";
@@ -108,9 +113,9 @@ export default function NewSession({ searchParams }: Props) {
       form.setValues({
         title: sessionData?.title,
         subtitle: sessionData?.subtitle,
-        date: new Date(sessionData?.date),
-        from: sessionData?.from,
-        till: sessionData?.till,
+        date: sessionData?.date ? new Date(sessionData?.date) : null,
+        from: sessionData?.from ? sessionData?.from : null,
+        till: sessionData?.till ? sessionData?.till : null,
         description: sessionData?.description,
         venue: sessionData?.venue,
         cover_image: sessionData?.cover_image,

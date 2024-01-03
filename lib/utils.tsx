@@ -25,8 +25,9 @@ export function showSuccessNotification(message: string) {
 }
 
 export function formatedDate(date: string | Date) {
+  if (!date || date == "") return null;
   const d = new Date(date);
-  return d.toLocaleDateString("en-US", {
+  return d?.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -34,6 +35,7 @@ export function formatedDate(date: string | Date) {
 }
 
 export function formateTime(date: string | Date) {
+  if (!date || date == "") return null;
   if (date?.toString().split(":").length === 2) {
     const [hours, minutes] = date.toString().split(":");
     const ampm = Number(hours) >= 12 ? "PM" : "AM";
@@ -42,7 +44,7 @@ export function formateTime(date: string | Date) {
   }
 
   const d = new Date(date);
-  return d.toLocaleTimeString("en-US", {
+  return d?.toLocaleTimeString("en-US", {
     hour: "numeric",
     minute: "numeric",
   });
